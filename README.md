@@ -1,5 +1,5 @@
-Anggota Kelompok:
-Aditama Nugroho(Leader)
-Winanda Qoulan Syadida(Coder)
-Rifqi Zanuar Aswar(Design)
-Arrifah Ainurrohmah Azhahroh(Tester)
+Anggota Kelompok: <br />
+Aditama Nugroho(Leader) <br />
+Winanda Qoulan Syadida(Coder) <br />
+Rifqi Zanuar Aswar(Design) <br />
+Arrifah Ainurrohmah Azhahroh(Tester) <br />
