@@ -21,7 +21,7 @@ public class CurrencyConverter {
         System.out.println("------------------");
         System.out.println("1. IDR ke USD");
         System.out.println("2. USD ke IDR");
-        System.out.println("Masukkan pilihan (1 atau 2): ");
+        System.out.print("Masukkan pilihan (1 atau 2): ");
         int choice = scanner.nextInt();
 
         if (choice == 1) {
