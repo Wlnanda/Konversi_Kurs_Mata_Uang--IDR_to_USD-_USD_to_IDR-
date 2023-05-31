@@ -3,7 +3,7 @@ import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class CurrencyConverter {
-    private static final BigDecimal idr_ke_usd_286 = new BigDecimal("0.000071"); // 1 IDR = 0.000071 USD
+    private static final BigDecimal idr_ke_usd_286 = new BigDecimal("0.000067"); // 1 IDR = 0.000067 USD
 
     public static BigDecimal convertIDRtoUSD(BigDecimal jumIDR) {
         return jumIDR.multiply(idr_ke_usd_286).setScale(2, RoundingMode.HALF_UP);
