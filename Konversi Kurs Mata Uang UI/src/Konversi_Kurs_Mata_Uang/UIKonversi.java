@@ -47,7 +47,7 @@ String[] UnitKonversi = {
         jLabel1.setText("Konversi Mata Uang");
 
         firstCountry.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        firstCountry.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilihan...", "USA", "Indonesia" }));
+        firstCountry.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USA", "Indonesia" }));
         firstCountry.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 firstCountryItemStateChanged(evt);
@@ -60,7 +60,7 @@ String[] UnitKonversi = {
         });
 
         secondCountry.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        secondCountry.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilihan...", "USA", "Indonesia" }));
+        secondCountry.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Indonesia", "USA" }));
         secondCountry.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 secondCountryItemStateChanged(evt);
