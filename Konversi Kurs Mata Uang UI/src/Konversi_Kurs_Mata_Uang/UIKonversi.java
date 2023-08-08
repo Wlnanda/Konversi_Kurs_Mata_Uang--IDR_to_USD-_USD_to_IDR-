@@ -1,27 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Konversi_Kurs_Mata_Uang;
 
-/**
- *
- * @author mukul
- */
-public class CurrencyConverter extends javax.swing.JFrame {
-double US_Dollar = 1.31;
-double Indonesian_Rupiah = 19554.94;
+public class UIKonversi extends javax.swing.JFrame {
+double dollar = 0.66;
+double rupiah = 15222.00;
 
-String[] currencyUnits = {
+String[] UnitKonversi = {
 "Units",
-"US Dollar",
+"USD",
 "Indonesian Rupiah",
 };
     /**
      * Creates new form CurrencyConverter
      */
-    public CurrencyConverter() {
+    public UIKonversi() {
         initComponents();
     }
 
@@ -226,8 +217,8 @@ String[] currencyUnits = {
         
       switch(firstCountry.getSelectedItem().toString())
         {
-        case "USA": amountInPounds = amountToChange/US_Dollar;break;
-	case "Indonesia":amountInPounds = amountToChange/Indonesian_Rupiah;break;
+        case "USA": amountInPounds = amountToChange/dollar;break;
+	case "Indonesia":amountInPounds = amountToChange/rupiah;break;
 	default:amountInPounds = 0.0;
         }
 
@@ -235,8 +226,8 @@ String[] currencyUnits = {
         
         switch(secondCountry.getSelectedItem().toString())
         {
-        case "USA":amountChanged = amountInPounds * US_Dollar;break;
-	case "Indonesia":amountChanged = amountInPounds * Indonesian_Rupiah;break;
+        case "USA":amountChanged = amountInPounds * dollar;break;
+	case "Indonesia":amountChanged = amountInPounds * rupiah;break;
 	default:amountChanged = amountInPounds * 0.0;
         }
         
@@ -251,44 +242,24 @@ String[] currencyUnits = {
     }//GEN-LAST:event_firstCountryActionPerformed
 
     private void firstCountryItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_firstCountryItemStateChanged
-        firstCurrencyUnit.setText(currencyUnits[firstCountry.getSelectedIndex()]);
+        firstCurrencyUnit.setText(UnitKonversi[firstCountry.getSelectedIndex()]);
     }//GEN-LAST:event_firstCountryItemStateChanged
 
     private void secondCountryItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_secondCountryItemStateChanged
-        secondCurrencyUnit.setText(currencyUnits[secondCountry.getSelectedIndex()]);
+        secondCurrencyUnit.setText(UnitKonversi[secondCountry.getSelectedIndex()]);
     }//GEN-LAST:event_secondCountryItemStateChanged
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CurrencyConverter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CurrencyConverter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CurrencyConverter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CurrencyConverter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new CurrencyConverter().setVisible(true);
+            new UIKonversi().setVisible(true);
         });
     }
 
